@@ -1,0 +1,19 @@
+$mainColor : #15023a;
+$small : 300px;
+$medium : 900px;
+$breakpoint-tablet: 760px;
+
+$width : 768px;
+$minWidth : 900px;
+
+@mixin mobile{
+    @media (max-width : #{$width}) {
+        @content
+    }
+};
+
+@mixin pc {
+    @media (min-width : #{$minWidth}) {
+        @content
+    }
+}

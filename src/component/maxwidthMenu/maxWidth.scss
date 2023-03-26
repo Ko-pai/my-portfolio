@@ -1,0 +1,34 @@
+@import "../../global.scss";
+
+.me{
+    width: 600px;
+    display: inline;
+    @include mobile {
+        display: none;     
+    }
+    
+    ul{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        font-size: 20px; 
+        color: $mainColor;
+        font-weight: 450;
+        
+        
+        li{
+            margin-right: 10px;
+
+            a{
+                text-decoration: none;
+                color: inherit;
+
+                &:hover{
+                    text-shadow: 0px 10px 5px rgba($color: rgb(88, 84, 84), $alpha: 0.5);
+                }
+            }
+        }
+        
+    }
+    
+}

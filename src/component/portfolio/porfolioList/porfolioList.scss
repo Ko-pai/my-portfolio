@@ -1,0 +1,17 @@
+@import "../../../global.scss";
+
+.porList{ 
+    margin-right: 70px;
+    cursor: pointer;
+    user-select: none;
+    padding: 7px;
+    border-radius: 10px;
+    @include mobile{
+        margin-top: 5px;
+    }
+
+    &.active{
+        background-color: $mainColor;
+        color: white;
+    }
+}
