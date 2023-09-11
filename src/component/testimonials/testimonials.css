@@ -1,0 +1,123 @@
+.testimo {
+  background-color: white;
+  overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+@media (max-width: 768px) {
+  .testimo {
+    overflow-y: scroll;
+  }
+  .testimo::-webkit-scrollbar {
+    display: none;
+  }
+}
+.testimo h1 {
+  text-align: center;
+  font-size: 40px;
+}
+.testimo .container {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+@media (max-width: 768px) {
+  .testimo .container {
+    height: auto;
+    flex-direction: column;
+  }
+}
+.testimo .container .sec-active .top .icon {
+  width: 45px;
+}
+.testimo .container .active {
+  transition: all 0.5s ease-out;
+}
+.testimo .container .active .top .icon {
+  width: 45px;
+  height: 40px;
+}
+.testimo .container .card1 {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  box-shadow: 0px 0px 25px -8px rgba(0, 0, 0, 0.5);
+  margin: 5px;
+}
+@media (max-width: 768px) {
+  .testimo .container .card1 {
+    height: 300px;
+  }
+}
+.testimo .container .card1:hover {
+  box-shadow: 0px 0px 55px -10px rgba(211, 67, 67, 0.5);
+}
+.testimo .container .card1 .top {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  margin-top: 20px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.testimo .container .card1 .top .img-container {
+  width: 100px;
+  height: 100px;
+  overflow-y: hidden;
+}
+.testimo .container .card1 .top .img-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.testimo .container .card1 .top img {
+  width: 40px;
+  height: 40px;
+}
+.testimo .container .card1 .middle p {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
+}
+@media (max-width: 768px) {
+  .testimo .container .card1 .middle p {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    word-spacing: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .testimo .container .card1 .bottom {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .testimo .container .card1 .bottom h2 {
+    font-size: 16px;
+  }
+}
+.testimo .container .card1 .bottom h3 {
+  font-weight: 400;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.testimo .container .card2 {
+  flex: 4;
+  background-color: blue;
+  margin-right: 30px;
+}
+.testimo .container .card3 {
+  flex: 3;
+  background-color: green;
+}/*# sourceMappingURL=testimonials.css.map */

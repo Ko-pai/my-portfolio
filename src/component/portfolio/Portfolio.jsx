@@ -56,8 +56,8 @@ function Portfolio() {
       
       <div className="ul-con">
         <ul>
-          {list.map((list)=> {
-            return( <PorfolioList title={list.title} active ={selected === list.id} setSelected= {setSelected} id={list.id}/> )
+          {list.map((lis)=> {
+            return( <PorfolioList title={lis.title} active ={selected === lis.id} setSelected= {setSelected} id={lis.id}/> )
             
           }
             

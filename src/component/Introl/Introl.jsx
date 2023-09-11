@@ -13,7 +13,7 @@ function Introl() {
         showCursor : true ,
         backDelay : 1500,
         backSpeed: 100,
-        strings :["Web Developer","Front-end Developer","UX Desinger"]
+        strings :["Web Developer","Front-end Developer","Web developer"]
       })
   },[])
   return (
@@ -29,7 +29,7 @@ function Introl() {
         <div className="wrapper">
           <h2>Hi There, I'm </h2>
           <h1>Pai Thet Kyaw</h1>
-          <h3>Freelence <span ref={textName}></span></h3>
+          <h3>Freelance <span ref={textName}></span></h3>
           
           <a href="#portfolio">
             <FontAwesomeIcon icon={faAngleDown}  className="angleDown"/>

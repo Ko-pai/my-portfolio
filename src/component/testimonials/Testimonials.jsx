@@ -10,7 +10,7 @@ const data = [
     name : "John",
     work : "Senior Developer",
     img : "assest/manPhoto.jpg",
-    icon : "assest/insta.png",
+    icon : "assest/twitter.png",
     card1 : true
   },
   {
@@ -18,7 +18,7 @@ const data = [
     name : "Katherine",
     work : "Designer",
     img : "assest/woman.jpg",
-    icon : "assest/Youtube1.png",
+    icon : "assest/youtube.png",
     card1 : true
   },
   {

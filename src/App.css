@@ -1,0 +1,21 @@
+.app {
+  height: 100vh;
+}
+.app .section {
+  width: 100%;
+  height: calc(100vh - 70px);
+  background-color: lightsalmon;
+  position: relative;
+  top: 70px;
+  scroll-behavior: smooth;
+  scroll-snap-type: Y mandatory;
+  scrollbar-width: none;
+}
+.app .section::-webkit-scrollbar {
+  display: none;
+}
+.app .section > * {
+  width: 100vw;
+  height: calc(100vh - 70px);
+  scroll-snap-align: start;
+}/*# sourceMappingURL=App.css.map */

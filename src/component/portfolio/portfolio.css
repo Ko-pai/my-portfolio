@@ -1,0 +1,112 @@
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  color: rgb(5, 5, 5);
+}
+.portfolio h1 {
+  font-size: 60px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-shadow: 0px 8px 5px rgba(185, 179, 179, 0.8);
+}
+@media (max-width: 768px) {
+  .portfolio h1 {
+    font-size: 50px;
+    overflow: hidden;
+    padding: 12px;
+    margin-top: 0;
+  }
+}
+.portfolio .ul-con {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .portfolio .ul-con {
+    width: 100%;
+    height: 200px;
+  }
+}
+.portfolio .ul-con ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-top: 5px;
+}
+@media (max-width: 768px) {
+  .portfolio .ul-con ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.portfolio .project-container {
+  overflow: hidden;
+  width: 70%;
+  display: grid;
+  padding-top: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-items: center;
+}
+@media (max-width: 768px) {
+  .portfolio .project-container {
+    width: 100%;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    overflow-y: scroll;
+    justify-items: center;
+  }
+  .portfolio .project-container::-webkit-scrollbar {
+    display: none;
+  }
+}
+.portfolio .project-container .project-list {
+  width: 350px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: 1px solid rgb(240, 239, 239);
+  margin: 20px 0;
+  color: white;
+  transition: all 0.5s ease;
+  position: relative;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .portfolio .project-container .project-list {
+    width: 250px;
+    height: 220px;
+  }
+}
+.portfolio .project-container .project-list img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  z-index: 1;
+}
+.portfolio .project-container .project-list h3 {
+  position: absolute;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+}
+.portfolio .project-container .project-list:hover {
+  background-color: #15023a;
+}
+.portfolio .project-container .project-list:hover img {
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.port {
+  text-align: center;
+}/*# sourceMappingURL=portfolio.css.map */

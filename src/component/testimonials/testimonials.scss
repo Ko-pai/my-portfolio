@@ -2,8 +2,17 @@
 
 .testimo{
     background-color: white;
-    overflow-y: hidden;
+    overflow: hidden;
     user-select: none;
+
+    @include mobile{
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+
     h1{
         text-align: center;
         font-size: 40px;
@@ -14,6 +23,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 50px;
+
+        @include mobile{
+            height: auto;
+            flex-direction: column;
+            
+        }
 
         .sec-active{
             
@@ -23,31 +39,46 @@
                 }
             }
         }
+
+
         .active{
             transition: all .5s ease-out;
 
-            &:hover{
-                transform: scale(1.158);
-            }
+            // &:hover{
+            //     transform: scale(1.158);
+            // }
 
             .top{
 
+
+                
+
                 .icon{
-                    width: 50px;
+                    width: 45px;
                     height: 40px;
+                    
+                    
+
+
+                    
                 }
             }
         }
-            .card1{
-                width: 300px;
+        .card1{
+                width: 400px;
                 height: 400px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                padding: 20px;
+                padding: 10px;
                 box-shadow: 0px 0px 25px -8px rgba(0, 0, 0, 0.5);
-                margin-right: 50px;
-                margin
+                margin: 5px;
+
+                @include mobile{
+                    
+                    height: 300px;
+                }
+                
                 &:hover{
                     box-shadow: 0px 0px 55px -10px rgba($color: #d34343, $alpha: 0.5);
                 }
@@ -80,10 +111,47 @@
                         
                     }
                 }
+
+                .middle{
+
+                    p{
+                        font-size: 16px;
+                        line-height: 20px;
+                        letter-spacing: .5px;
+                        word-spacing: 2px;
+                    }
+
+                    @include mobile{
+                    
+                        p{
+                            font-size: 14px;
+                            letter-spacing: .5px;
+                            word-spacing: 0px;
+                        }
+                        
+                    }
+                }
+
                 .bottom{
+                    @include mobile{
+                    
+                       margin-top: 10px;
+                        
+                    }
+
+
+                    h2{
+                        @include mobile{
+                    
+                            font-size: 16px;
+                            
+                        }
+                    }
+                    
                     h3{
                         font-weight: 400;
                         margin-top: 10px;
+                        font-size: 14px;
                     }
                 }
             }

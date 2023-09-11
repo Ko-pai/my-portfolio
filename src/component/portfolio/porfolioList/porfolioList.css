@@ -1,0 +1,18 @@
+.porList {
+  margin-right: 70px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  padding: 7px;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .porList {
+    margin-top: 5px;
+  }
+}
+.porList.active {
+  background-color: #15023a;
+  color: white;
+}/*# sourceMappingURL=porfolioList.css.map */
