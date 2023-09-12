@@ -32,6 +32,7 @@ export default function Contact() {
               <div className="inputBox">
                 <input type="text" name="email" placeholder="Email"/>
                 <textarea name="message" id="" cols="30" rows="10" placeholder="Message" className="message"></textarea>
+                <button>Send</button>
               </div>
             </div>
         </div>
